@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
   const fetchMovies = async () => {
     try {
       const response = await fetch(
-        `https://api.themoviedb.org/3/discover/movie?sort_by=${sortBy}&api_key=3fd2be6f0c70a2as59sfdfsdfs8f084ddfb75e1487c&page=${page}`
+        `https://api.themoviedb.org/3/discover/movie?sort_by=${sortBy}&api_key=&page=${page}`
       );
       const data = await response.json();
       setMovies(data.results);
@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
   const fetchMoviesSearch = async () => {
     try {
       const response = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query=${searchCriteria}`
+        `https://api.themoviedb.org/3/search/movie?api_key=&query=${searchCriteria}`
       );
       const data = await response.json();
       setMovies(data.results);
