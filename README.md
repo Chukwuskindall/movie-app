@@ -22,7 +22,7 @@ View detailed information about movies
 Responsive design for optimal viewing on different devices
 Installation
 Clone the repository:
-git clone https://github.com/muhammadmaarij/movie-app.git
+git clone https://github.com/Chukwuskindall/movie-app.git
 cd movie-app
 Set up a virtual environment (optional but recommended for the backend):
 python -m venv venv
